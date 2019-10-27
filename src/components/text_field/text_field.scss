@@ -1,0 +1,45 @@
+@import '../../pages/common-variables.scss';
+
+.textfield-input {
+  width: 170px;
+  height: 37px;
+  background: $white;
+  font-family: Fira Sans;
+  font-size: 18px;
+  line-height: 28px;
+  color: $dark-70;
+  padding: 0px 0px 0px 20px;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@mixin placeholder {
+  input.textfield-input::-webkit-input-placeholder {@content}
+  input.textfield-input::-moz-placeholder          {@content}
+  input.textfield-input:-moz-placeholder           {@content}
+}
+
+@include placeholder {
+  font-family: Fira Sans;
+  font-size: 18px;
+  line-height: 28px;
+  color: $dark-70;
+}
+
+/* Place Holder CSS for Focus */
+input.textfield-input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+input.textfield-input:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+input.textfield-input:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}

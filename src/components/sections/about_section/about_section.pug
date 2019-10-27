@@ -1,0 +1,15 @@
+include ../../article/article.pug
+-
+  const articleAbout = { 
+    heading:"Я лишь хочу захватить секундную часть реальности",
+    paragraphs:[
+      {paragraph:"Я начала фотографировать, когда была подростком. Среди прочих  увлечений, которые быстро забывались, фотография надолго вошла в мою жизнь и стала ее неотъемлимой частью.",
+      classes:"article__text article__text_width-445"}
+    ]};
+
+
+div.about-section
+  div.about-section__image-wrapper
+    img.about-section__image(src="./img/about.png", alt="img")
+  div.about-section__article
+    +article(articleAbout)

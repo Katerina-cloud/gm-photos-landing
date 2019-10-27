@@ -1,0 +1,20 @@
+include ../../comment/comment.pug
+include ../../buttons/button_arrow/button_arrow.pug
+
+-
+  const commentReviews = {
+    name:"Полина Кузина", text:"\"Мне сложно видеть себя на фото. То что обычно получается, не похоже на то, какой мне хотелось бы себя видеть...\""};  
+
+
+div.comments-section
+  div.comments-section__comment-wrapper
+    h4.comments-section__heading Отзывы
+    div.comments-section__comment
+      +comment(commentReviews)
+      div.comments-section__buttons
+        div.comments-section__btn
+          +button("btn-arrow btn-arrow_left")
+        div.comments-section__btn
+          +button("btn-arrow btn-arrow_right")
+  div.comments-section__img-wrapper
+    img.comments-section__image(src="./img/comments_section1.png", alt="photo")

@@ -1,0 +1,76 @@
+@import '../../../pages/common-variables.scss';
+@import '../../../pages/mixins.scss';
+
+.comments-section__heading {
+  @include h4; 
+  color: $dark-70;
+}
+
+.comments-section__buttons {
+  display: flex;
+}
+
+.comments-section__image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 320px) { 
+  .comments-section {
+    padding: 0px 10px;
+
+    &__heading {
+      margin-bottom: 20px;
+    }
+  
+    &__buttons {
+      margin-bottom: 30px;
+    }
+  }
+  
+  .comments-section__btn {
+    margin-right: 15px;
+  }
+}  
+
+@media (min-width: 576px) { 
+  .comments-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:0px 50px;
+
+    &__comment-wrapper {
+      flex-basis: 50%;
+
+      .comments-section__buttons {
+        margin-bottom: 0px;
+      }
+    }
+  
+    &__img-wrapper {
+      flex-basis: 40%;
+    }
+  }
+}  
+
+@media (min-width: 768px) {   
+  .comments-section__heading {
+    @include h4; 
+    margin: 0px 0px 20px 0px;
+  }
+
+  .comments-section__btn {
+    margin-right: 25px;
+  }
+}  
+
+@media (min-width: 992px) {
+  .comments-section {
+    padding: 0px 125px;
+
+    &__comment {
+      margin-top: 78px;
+    }
+  }
+}

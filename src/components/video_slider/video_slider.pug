@@ -1,0 +1,28 @@
+include ../buttons/button_arrow/button_arrow.pug
+
+div.video-slider
+  div.video-slider__wrapper
+    //- SLIDE 1
+    div.video-slider__slide.video-slider__slide_left
+      video.video-slider__video(controls crossorigin playsinline poster="./img/video_slider1.png")
+        source(src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576")
+        source(src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720")
+        source(src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080")
+
+        //- Fallback for browsers that don't support the <video> element
+        a(href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download) Download
+
+    //- SLIDE 2
+    div.video-slider__slide.video-slider__slide_right
+      video.video-slider__video(controls crossorigin playsinline poster="./img/video_slider2.png")
+        source(src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576")
+        source(src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720")
+        source(src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080")
+
+        a(href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download) Download
+
+  div.video-slider__buttons
+    div.video-slider__btn
+      +button("btn-arrow btn-arrow_left btn-arrow_left-video-slider")
+    div.video-slider__btn
+      +button("btn-arrow btn-arrow_right btn-arrow_right-video-slider")

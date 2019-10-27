@@ -1,0 +1,15 @@
+include ../../buttons/button/button.pug
+
+div.gallery-section
+  div.gallery-section__header
+    h4.gallery-section__heading_dark-70 — Портфолио
+    div.gallery-section__menu
+      h4.gallery-section__heading_light-gray Все фотографии
+      h4.gallery-section__heading_dark-100 Портретная съемка
+      h4.gallery-section__heading_light-gray Истории любви
+      h4.gallery-section__heading_light-gray Репортажи
+      h4.gallery-section__heading_light-gray Проекты
+  div.gallery-section__gallery
+    include ../../gallery/gallery.pug
+  div.gallery-section__button 
+    +button("btn btn_black btn_big", "Посмотретьт все работы")  

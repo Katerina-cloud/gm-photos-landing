@@ -1,0 +1,83 @@
+@import '../../pages/common-variables.scss';
+@import '../../pages/mixins.scss';
+
+.navbar {
+  font-size: 18px;
+  padding-bottom: 10px;
+  background-color: #FFFFFF;
+  font-family: Fira Sans;
+  position: relative;
+  
+  
+  &__minimized-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+
+    .navbar__toggle {
+      cursor: pointer;
+    }
+
+    .navbar__logo { @include h2; }
+  
+    .navbar__search-icon {
+      color: $dark-100;
+    }
+  }
+
+  &__main-nav {
+    list-style-type: none;
+    display: none;
+    padding: 0px;
+
+    .navbar__main-nav-links {
+      margin-bottom: 24px;
+      height: 21px;
+    
+      .navbar__link {
+        text-decoration: none;
+        color:$dark-100;
+      }
+    }
+  }
+}
+
+.navbar__main-nav_active {
+  display: block;
+}
+
+@media (min-width: 320px) { 
+  .navbar {
+    padding: 0px 10px;
+   
+    &__minimized-nav {
+      height: 70px;
+    }
+  }
+}
+
+@media (min-width: 576px) { 
+  .navbar {
+    padding: 0px 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    padding: 0px 125px;
+
+    &__minimized-nav {
+    height: 142px;
+
+      .navbar__logo{
+        padding-top: 24px;
+      }
+      
+      .navbar__search-icon {
+        height: 29px;
+        width: 117px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import '../../pages/common-variables.scss';
+
+body {
+  margin: 0px;
+}
+
+
+@media (min-width: 320px) { 
+  .landing__booking,
+  .landing__about,
+  .landing__video,
+  .landing__how-it-works,
+  .landing__gallery,
+  .landing__comments {
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (min-width: 992px) {   
+  .landing__booking {
+    margin-bottom: 135px;
+  }
+  .landing__about {
+    margin-bottom: 142px;
+  }
+  .landing__video {
+    margin-bottom: 181px;
+  }
+  .landing__how-it-works {
+    margin-bottom: 150px;
+  }
+  .landing__gallery {
+    margin-bottom: 256px;
+  }
+  .landing__comments {
+    margin-bottom: 105px;
+  }
+}
+
+@media (min-width: 1220px) { 
+  .landing__how-it-works {
+    margin-bottom: 337px;
+  }
+}

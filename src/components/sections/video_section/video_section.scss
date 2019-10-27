@@ -1,0 +1,52 @@
+@import '../../../pages/common-variables.scss';
+@import '../../../pages/mixins.scss';
+
+.video-section__heading {
+  @include h4;
+  color: $dark-70;
+}
+
+.video-section__comment {
+  @include h2;
+  max-width: 540px;
+}
+
+@media (min-width: 320px) { 
+  .video-section {
+    padding: 0px 10px 0px 10px;
+  }
+  
+  .video-section__heading {
+    margin-bottom: 20px;
+  }
+
+  .video-section__comment {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 576px) { 
+  .video-section {
+    padding: 0px 50px 0px 50px;
+  }
+}
+
+@media (min-width: 768px) {   
+  .video-section {
+    padding: 0px 0px 0px 50px;
+  }
+
+  .video-section__heading {
+    margin-bottom: 40px;
+  }
+
+  .video-section__comment {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .video-section {
+    padding: 0px 0px 0px 125px;
+  }
+}

@@ -1,0 +1,35 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 320px) { 
+  .gallery__img-wrapper {
+    padding: 0px 0px 20px 0px;
+  }
+}
+
+@media (min-width: 576px) { 
+  .gallery__img-wrapper {
+    width: calc(50% - 20px);
+    padding: 0px 20px 20px 0px;
+  }
+}
+
+@media (min-width: 768px) {   
+  .gallery__img-wrapper {
+    width: calc(33.3% - 30px);
+  }
+}  
+
+@media (min-width: 992px) {
+  .gallery__img-wrapper {
+    padding: 0px 30px 30px 0px;
+  }
+}

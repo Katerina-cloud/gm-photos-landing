@@ -1,0 +1,29 @@
+@import '../../pages/common-variables.scss';
+@import '../../pages/mixins.scss';
+
+
+.article__heading { 
+  @include h2; 
+  max-width: 540px;
+  margin-bottom: 25px;
+}
+
+.article__text {
+  @include p;
+  
+  &_width-445 {
+    max-width: 445px;
+    margin: 0px;
+  }
+
+  &_width-475 {
+    max-width: 475px;
+    margin: 0px;
+  }  
+}
+
+@media (min-width: 1220px) {   
+  .article__text_margin-top-75 {
+    margin-top: 75px;
+  }
+}

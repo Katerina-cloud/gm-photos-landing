@@ -1,0 +1,18 @@
+include ../../buttons/button/button.pug
+
+
+div.booking-section
+  div.booking-section__wrapper
+    div.booking-section__article
+      h1.booking-section__heading Фотография как отражение души
+      p.booking-section__text Меня зовут Галина Мэй и я люблю показывать людям насколько они красивы.
+      div.booking-section__button
+        +button("btn btn_black btn_big", "Заказать фотосессию")  
+      div.booking-section__loader
+        include ../../loader/loader.pug  
+    div.booking-section__image-wrapper
+      img.booking-section__image(src="./img/booking.png", alt="img")
+  div.booking-section__video
+    include ../../video/video.pug    
+
+  

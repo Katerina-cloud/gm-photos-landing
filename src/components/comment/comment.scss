@@ -1,0 +1,33 @@
+@import '../../pages/common-variables.scss';
+@import '../../pages/mixins.scss';
+
+
+.comment {
+  max-width: 540px;
+
+  &__text { 
+    @include h2; 
+  }
+  
+  &__name {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 320px) {   
+  .comment__name {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 20px 0px 20px 0px;
+  }
+}
+
+@media (min-width: 768px) {   
+  .comment__name {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 107px 0px 90px 0px;
+  }
+}

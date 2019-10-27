@@ -1,0 +1,24 @@
+include ../../article/article.pug
+
+-
+  const articleWorks = { 
+    heading:"Как проходит фотосессия",
+    paragraphs:[
+      {paragraph:"Мы заранее обсуждаем результат, которого вы хотите добиться, ищем локацию и продумываем ваш образ до мелочей.",
+      classes:"article__text article__text_width-475 article__text_margin-top-75"},
+      {paragraph:"В фотосессию включено время для расслабления и адаптации, ведь в конечном счете, фотография о том, кто вы есть. Это правда по отношению к себе и именно ее мы будем искать.",
+      classes:"article__text article__text_width-475"}
+    ]};
+   
+
+div.how-works-section
+  div.how-works-section__images
+    div.how-works-section__img-wrapper1
+      img.how-works-section__image(src="./img/how_works_section1.png", alt="landscape")
+    div.how-works-section__img-wrapper2
+      img.how-works-section__image(src="./img/how_works_section2.png", alt="portrait")
+  div.how-works-section__article
+    +article(articleWorks)
+
+
+

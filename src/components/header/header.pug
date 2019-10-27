@@ -1,0 +1,11 @@
+mixin header(options)
+  nav.navbar
+    div.navbar__minimized-nav
+      a.navbar__logo(href="/mock-address/change-me") GM photos
+      i.fa.fa-search.fa-lg.navbar__search-icon
+      span.navbar__toggle
+        img(src="./img/menu_icon.png", alt="menu icon")
+    ul.navbar__main-nav
+      each item in options
+        li.navbar__main-nav-links
+          a.navbar__link(href=item.url)=item.name

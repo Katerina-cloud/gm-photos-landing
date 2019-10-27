@@ -1,0 +1,46 @@
+include ../../components/header/header.pug
+include ../../components/footer/footer.pug
+include ../../components/buttons/button/button.pug
+
+-
+  const navbar = [
+    {name:"Услуги", url:"#landing__booking"},
+    {name:"О нас", url:"#landing__about"},
+    {name:"Видео", url:"#landing__video"},
+    {name:"Как происходит фотосессия", url:"#landing__how-it-works"},
+    {name:"Портфолио", url:"#landing__gallery"},
+    {name:"Отзывы", url:"#landing__comments"},
+  ];
+  const footerText = {
+  logoText:"GM photos",
+  linkList : [
+  {url:"/mock-address/change-me", text:"Портфолио"},
+  {url:"/mock-address/change-me", text:"Цены"},
+  {url:"/mock-address/change-me", text:"Контакты"},
+  ],
+ }
+
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Landing page
+  body.landing
+    div.landing__header
+      +header(navbar)
+    section.landing__booking#landing__booking
+      include ../../components/sections/booking_section/booking_section.pug  
+    section.landing__about#landing__about
+      include ../../components/sections/about_section/about_section.pug
+    section.landing__video#landing__video
+      include ../../components/sections/video_section/video_section.pug
+    section.landing__how-it-works#landing__how-it-works  
+      include ../../components/sections/how_works_section/how_works_section.pug
+    section.landing__gallery#landing__gallery
+      include ../../components/sections/gallery_section/gallery_section.pug   
+    section.landing__comments#landing__comments
+      include ../../components/sections/comments_section/comments_section.pug  
+    div.landing__footer
+      +footer(footerText)

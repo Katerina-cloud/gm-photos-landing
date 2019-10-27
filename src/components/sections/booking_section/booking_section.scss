@@ -1,0 +1,115 @@
+@import '../../../pages/mixins.scss';
+@import '../../../pages/common-variables.scss';
+
+.booking-section {
+  position: relative;
+}
+
+
+.booking-section__heading {
+  @include h1;
+}
+
+.booking-section__text {
+  @include p;
+}
+
+.booking-section__image {
+  height: auto;
+  width: 100% ;
+}
+
+@media (min-width: 320px) { 
+  .booking-section {
+    padding: 0px 0px 0px 10px;
+
+    .booking-section__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__article {
+      max-width: 50%;
+          
+      .booking-section__heading {
+        margin: 0px 0px 20px 0px;
+      }
+
+      .booking-section__button {
+        margin-top: 10px;
+      }
+    }
+  }
+  .booking-section__video,
+  .booking-section__loader {
+    display: none;
+  }
+}  
+
+@media (min-width: 576px) { 
+  .booking-section {
+    padding: 0px 0px 0px 50px;
+
+    &__article {
+      flex-basis: 42.8%;
+            
+      .booking-section__heading {
+        margin: 33px 0px 27px 0px;
+      }
+
+      .booking-section__button {
+        margin-top: 83px;
+      }
+    }
+  
+    &__image-wrapper {
+      flex-basis: 54%;
+    }
+  }
+}
+
+@media (min-width: 768px) {   
+  .booking-section__article {
+    margin-top: 35px;
+  }
+  .booking-section__video,
+  .booking-section__loader {
+    display: block;
+  }
+  .booking-section__loader {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 992px) {
+  .booking-section {
+    padding: 0px 0px 0px 125px;
+  }
+
+  .booking-section__video {
+    position: absolute;
+    top: 65%;
+    right: -10.3%;
+  }
+
+  .booking-section__loader {
+    margin-top: 192px;
+  }
+
+  .booking-section__button {
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1220px) {
+  .booking-section__loader {
+    margin-top: 325px;
+  }
+
+  .booking-section__video {
+    position: absolute;
+    top: 41%;
+    right: 5.7%;
+  }
+}

@@ -1,0 +1,19 @@
+mixin footer(options)
+  div.footer
+    div.footer__container
+      div.footer__main-footer
+        div.footer__logo=options.logoText
+        div.footer__links
+          each link in options.linkList
+            div
+              a.footer__link(href="link.url")=link.text
+        form(action="", method="post").footer__form
+          include ../text_field/text_field.pug
+          div.footer__button
+            +button("btn btn_black btn_small", "отправить")
+      div.footer__widgets
+        i(class="footer__icon fa fa-twitter")
+        i(class="footer__icon fa fa-instagram")
+        i(class="footer__icon fa fa-google")
+        i(class="footer__icon fa fa-facebook-f")
+        

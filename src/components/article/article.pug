@@ -1,0 +1,5 @@
+mixin article(options)
+  article.article
+    h2.article__heading=options.heading
+    each item in options.paragraphs
+      p(class=item.classes)=item.paragraph

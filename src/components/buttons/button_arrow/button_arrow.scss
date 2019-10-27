@@ -1,0 +1,41 @@
+@import '../../../pages/common-variables.scss';
+
+.btn-arrow {
+  background-color: $gray;
+  border: none;
+  position: relative;
+  
+  &_right {
+    &::after {
+      content: url(./img/right.png);
+      position: absolute;
+      right: 39%;
+      top: 55%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &_left {
+    &::after {
+      content: url(./img/left.png);
+      position: absolute;
+      right: 39%;
+      top: 55%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media (min-width: 320px) { 
+  .btn-arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 768px) {   
+  .btn-arrow {
+    width: 50px;
+    height: 50px;
+  }
+}

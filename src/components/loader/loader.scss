@@ -1,0 +1,39 @@
+@import '../../pages/common-variables.scss';
+
+.loader {
+  display: flex;
+  justify-content: flex-start;
+  width: 65%;
+
+  &__start-line {
+    border-top: 2px solid#C6B393;
+    width: 110%;
+    margin: auto 0;
+    height: 0;
+  }
+  
+  &__end-line {
+    border-top: 2px solid $dark-100;
+    width: 110%;
+    margin: auto 0;
+    height: 0;
+  }
+
+  &__start,
+  &__end {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: $dark-100;
+    text-align: center;
+  }
+
+  &__end {
+    padding-left: 10px;
+  }
+
+  &__start {
+    padding-right: 10px;
+  }
+}
