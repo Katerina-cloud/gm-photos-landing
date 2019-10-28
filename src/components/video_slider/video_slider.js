@@ -24,8 +24,7 @@ function nextSlide() {
     previousSlide();
     return;
   }
-  //          0       1
-  //slides = [VIDEO1, VIDEO2]
+
   slides.eq(pos + 1).css('z-index', '1').animate({left:'0%', opacity: '1'}, 500);
   slides.eq(pos).css('z-index', '-1').animate({left: '69%', opacity: '0.3'}, 500);
   pos++;

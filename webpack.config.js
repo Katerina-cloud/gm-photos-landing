@@ -5,7 +5,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  watch: true,
+  // watch: true,
   mode: 'development',
   entry: {
     landing: './src/pages/landing/landing.js',
