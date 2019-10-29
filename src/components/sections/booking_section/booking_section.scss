@@ -39,10 +39,13 @@
         margin-top: 10px;
       }
     }
-  }
-  .booking-section__video,
-  .booking-section__loader {
-    display: none;
+
+    &__video {
+      width: 80%;
+    }
+    &__loader {
+      display: none;
+    }
   }
 }  
 
@@ -65,51 +68,63 @@
     &__image-wrapper {
       flex-basis: 54%;
     }
+
+    &__video {
+      width: 65%;
+      margin: auto;
+    }
   }
+  
 }
 
 @media (min-width: 768px) {   
-  .booking-section__article {
-    margin-top: 35px;
-  }
-  .booking-section__video,
-  .booking-section__loader {
-    display: block;
-  }
-  .booking-section__loader {
-    margin-top: 90px;
+  .booking-section {
+    &__article {
+      margin-top: 35px;
+    }
+
+    &__loader {
+      display: block;
+    }
+
+    &__loader {
+      margin-top: 90px;
+    }
   }
 }
 
 @media (min-width: 992px) {
   .booking-section {
     padding: 0px 0px 0px 125px;
-  }
+    
+    &__video {
+      position: absolute;
+      top: 43.4%;
+      right: 26.9%;
+      width: 29.4%;
+    }
 
-  .booking-section__video {
-    position: absolute;
-    top: 65%;
-    right: -10.3%;
-  }
+    &__loader {
+      margin-top: 192px;
+    }
 
-  .booking-section__loader {
-    margin-top: 192px;
-  }
-
-  .booking-section__button {
-    position: absolute;
-    z-index: 1;
+    &__button {
+      position: absolute;
+      z-index: 1;
+    }
   }
 }
 
 @media (min-width: 1220px) {
-  .booking-section__loader {
-    margin-top: 325px;
-  }
+  .booking-section {
+    &__loader {
+      margin-top: 325px;
+    }
 
-  .booking-section__video {
-    position: absolute;
-    top: 41%;
-    right: 5.7%;
+    &__video {
+      position: absolute;
+      top: 43.2%;
+      right: 28.7%;
+    }
   }
 }

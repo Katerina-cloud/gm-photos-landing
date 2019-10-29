@@ -1,10 +1,6 @@
 @import url("https://unpkg.com/plyr@3/dist/plyr.css");
 @import '../../pages/common-variables.scss';
 
-.video {
-	margin: 20px auto;
-}
-
 .video .plyr__control, 
 .video .plyr__control--overlaid, 
 .video .plyr__tab-focus,
@@ -34,19 +30,10 @@
   margin: 0 auto;
 }
 
-.video .plyr__video-wrapper, 
-.video .plyr video {
-  height: 310px;
-}
-
-@media (min-width: 768px) {   
-  .video {
-    width: 50%;
+@media (min-width: 992px) {
+  .video .plyr__video-wrapper, 
+  .video .plyr video {
+    height: 310px;
   }
 }
 
-@media (min-width: 992px) {   
-  .video {
-    width: 39%;
-  }
-}

@@ -1,4 +1,5 @@
 @import '../../pages/common-variables.scss';
+@import '../../pages/mixins.scss';
 
 .textfield-input {
   width: 170px;
@@ -12,20 +13,14 @@
   border: none;
   box-sizing: border-box;
   cursor: pointer;
+  color:$dark-70;
 }
 
-@mixin placeholder {
-  input.textfield-input::-webkit-input-placeholder {@content}
-  input.textfield-input::-moz-placeholder          {@content}
-  input.textfield-input:-moz-placeholder           {@content}
-}
+input.textfield-input::-webkit-input-placeholder {@include placeholder;}
+input.textfield-input::-moz-placeholder {@include placeholder;}
+input.textfield-input:-moz-placeholder {@include placeholder;}
+input.textfield-input:-ms-input-placeholder {@include placeholder;}
 
-@include placeholder {
-  font-family: Fira Sans;
-  font-size: 18px;
-  line-height: 28px;
-  color: $dark-70;
-}
 
 /* Place Holder CSS for Focus */
 input.textfield-input:focus::-webkit-input-placeholder {

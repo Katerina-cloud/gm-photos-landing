@@ -72,3 +72,11 @@
     line-height: 28px;
   }
 }
+
+@mixin placeholder {
+  font-family: Fira Sans;
+  font-size: 18px;
+  line-height: 28px;
+  color: $dark-70;
+  opacity: 1;
+}
