@@ -4,6 +4,7 @@ Landing page for GM Photos
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+You can run directly the landing.html page in the "dist" folder, which was provided for demo purposes or follow the Installing instructions.
 
 ### Installing
 
